@@ -20,13 +20,29 @@ const phone = useMouseParallax(28);
 const ads = useMouseParallax(18);
 
   return (
-    <div className="relative hidden h-[760px] w-full items-center justify-center lg:flex overflow-visible">
+    <div
+  className="
+    relative
+    flex
+    h-[360px]
+    w-full
+    items-center
+    justify-center
+    overflow-visible
+    sm:h-[420px]
+    lg:h-[760px]
+  "
+>
 
       {/* Background */}
 
-      <BackgroundEffects />
+      <div className="hidden lg:block">
+  <BackgroundEffects />
+</div>
 
-<AmbientParticles />
+<div className="hidden lg:block">
+  <AmbientParticles />
+</div>
 
       {/* Spotlight */}
 
@@ -57,7 +73,7 @@ const ads = useMouseParallax(18);
       {/* WEBSITE */}
 
       <motion.div
-        className="absolute left-[-30px] top-2 z-20"
+        className="absolute left-[-30px] top-2 z-20 hidden lg:block"
         style={{
           x: browser.x,
           y: browser.y,
@@ -99,7 +115,7 @@ const ads = useMouseParallax(18);
       {/* ADS */}
 
       <motion.div
-        className="absolute bottom-0 left-6 z-30"
+        className="absolute bottom-0 left-6 z-30 hidden lg:block"
         style={{
           x: ads.x,
           y: ads.y,
@@ -139,13 +155,16 @@ const ads = useMouseParallax(18);
         src={developerImg}
         alt="Developer"
         className="
-          relative
-          z-50
-          w-[540px]
-          select-none
-          drop-shadow-[0_40px_90px_rgba(0,0,0,0.35)]
-          pointer-events-none
-        "
+  relative
+  z-50
+  w-[240px]
+  sm:w-[300px]
+  md:w-[360px]
+  lg:w-[540px]
+  select-none
+  pointer-events-none
+  drop-shadow-[0_40px_90px_rgba(0,0,0,0.35)]
+"
         style={{
           x: developer.x,
           y: developer.y,
@@ -186,7 +205,7 @@ const ads = useMouseParallax(18);
       {/* PHONE */}
 
       <motion.div
-        className="absolute right-[-15px] top-0 z-40"
+        className="absolute right-[-15px] top-0 z-40 hidden lg:block"
         style={{
           x: phone.x,
           y: phone.y,

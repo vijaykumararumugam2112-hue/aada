@@ -11,11 +11,29 @@ import DeveloperScene from "../hero/DeveloperScene";
 function Hero() {
   return (
     <section
-      id="ho  "
-      className="min-h-screen flex items-center bg-gradient-to-b from-slate-50 via-white to-slate-100 pt-24"
-    >
+  id="home"
+  className="
+    min-h-[100svh]
+    flex
+    items-center
+    bg-gradient-to-b
+    from-slate-50
+    via-white
+    to-slate-100
+    pt-24
+  "
+>
       <Container>
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div
+  className="
+    grid
+    grid-cols-1
+    gap-10
+    lg:grid-cols-2
+    lg:gap-16
+    items-center
+  "
+>
 
           {/* ================= LEFT SIDE ================= */}
 
@@ -119,7 +137,7 @@ function Hero() {
 
             {/* Stats */}
 
-            <div className="mt-14 flex gap-12">
+            <div className="mt-14 grid grid-cols-3 gap-6 text-center lg:flex lg:gap-12">
 
               <div>
                 <h3 className="text-3xl font-bold text-blue-600">
@@ -157,7 +175,9 @@ function Hero() {
 
           {/* ================= RIGHT SIDE ================= */}
 
-          <DeveloperScene />
+          <div className="flex justify-center lg:block">
+  <DeveloperScene />
+</div>
 
         </div>
       </Container>
