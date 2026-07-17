@@ -10,8 +10,6 @@ import {
 
 import {
   FaInstagram,
-  FaLinkedin,
-  FaGithub,
 } from "react-icons/fa";
 
 const services = [
@@ -184,8 +182,7 @@ function FooterLinks() {
               className="text-cyan-400"
             />
 
-            vijaykumararumugam2112@gmail.com
-
+            aadadigitalstudio@gmail.com
           </div>
 
           <div className="flex items-center gap-3">
@@ -203,40 +200,33 @@ function FooterLinks() {
 
         {/* Social */}
 
-        <div className="mt-8 flex gap-4">
+<div className="mt-8 flex">
 
-          {[FaInstagram, FaLinkedin, FaGithub].map(
-            (Icon, index) => (
+  <motion.a
+    whileHover={{
+      y: -5,
+      scale: 1.15,
+    }}
+    href="https://instagram.com/aadadigitalstudio"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="
+      flex
+      h-12
+      w-12
+      items-center
+      justify-center
+      rounded-2xl
+      bg-white/10
+      backdrop-blur-xl
+      hover:bg-pink-500
+      transition
+    "
+  >
+    <FaInstagram size={20} />
+  </motion.a>
 
-              <motion.a
-                key={index}
-                whileHover={{
-                  y: -5,
-                  scale: 1.15,
-                }}
-                href="#"
-                className="
-                  flex
-                  h-12
-                  w-12
-                  items-center
-                  justify-center
-                  rounded-2xl
-                  bg-white/10
-                  backdrop-blur-xl
-                  hover:bg-cyan-500
-                  transition
-                "
-              >
-
-                <Icon size={20} />
-
-              </motion.a>
-
-            )
-          )}
-
-        </div>
+</div>
 
       </div>
 

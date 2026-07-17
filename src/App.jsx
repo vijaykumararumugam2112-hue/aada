@@ -10,6 +10,7 @@ import Contact from "./components/sections/Contact";
 
 import Footer from "./components/layout/Footer";
 import Dock from "./components/dock/Dock";
+import AADAvisLauncher from "./components/aadavis/AADAvisLauncher";
 
 function App() {
   return (
@@ -33,6 +34,8 @@ function App() {
       <Footer />
 
       <Dock />
+
+      <AADAvisLauncher />
     </>
   );
 }
