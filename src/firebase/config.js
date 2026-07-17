@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAFCZX91VxIlI0Pb_4AsgsSI9gK4OajNXc",
-  authDomain: "aada-website.firebaseapp.com",
-  projectId: "aada-website",
-  storageBucket: "aada-website.firebasestorage.app",
-  messagingSenderId: "569598869343",
-  appId: "1:569598869343:web:a229ab81b8f115c5cd40ea",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
