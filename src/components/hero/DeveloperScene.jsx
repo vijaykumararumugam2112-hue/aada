@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 
-import developerImg from "../../assets/images/developer.png";
-
+import developerImg from "../../assets/images/developer.webp";
 import BackgroundEffects from "./BackgroundEffects";
 import WebsiteCard from "./WebsiteCard";
 import AppCard from "./AppCard";

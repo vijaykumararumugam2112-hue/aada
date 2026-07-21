@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useRef } from "react";
 
 // Update this import path
-import aadavisAvatar from "../../assets/aadavis/aadavis.png";
+import aadavisAvatar from "../../assets/aadavis/aadavis.webp";
 
 export default function AADAvisMessages({ messages }) {
   const bottomRef = useRef(null);

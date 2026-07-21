@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-import aadavis from "../../assets/aadavis/aadavis.png";
+import aadavis from "../../assets/aadavis/aadavis.webp";
 import AADAvisBubble from "./AADAvisBubble";
 import AADAvisChat from "./AADAvisChat";
 

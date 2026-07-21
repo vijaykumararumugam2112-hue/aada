@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import logo from "../../assets/logo/logo.png";
+import logo from "../../assets/logo/logo.webp";
 
 function BrandLogo() {
   return (

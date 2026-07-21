@@ -5,7 +5,7 @@ import useConversation from "./useConversation";
 import AADAvisMessages from "./AADAvisMessages";
 import AADAvisInput from "./AADAvisInput";
 import AADAvisOptions from "./AADAvisOptions";
-import aadavisAvatar from "../../assets/aadavis/aadavis.png";
+import aadavisAvatar from "../../assets/aadavis/aadavis.webp";
 import AADAvisSummary from "./AADAvisSummary";
 import AADAvisSubmit from "./AADAvisSubmit";
 

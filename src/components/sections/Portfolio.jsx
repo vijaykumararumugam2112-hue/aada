@@ -7,8 +7,8 @@ import SectionTitle from "../common/SectionTitle";
 
 import FeaturedProject from "../portfolio/FeaturedProject";
 
-import ccubeProject from "../../assets/images/ccube-project.png";
-import businessProject from "../../assets/images/business-platform.png";
+import ccubeProject from "../../assets/images/ccube-project.webp";
+import businessProject from "../../assets/images/business-platform.webp";
 
 function Portfolio() {
   return (
